@@ -26,6 +26,8 @@ if __name__ == "__main__":
         "xor"
     ]
 
+    execution = []
+
     for DATASET_NAME in DATASET_LIST:
         print("\n\n----\n{}".format(DATASET_NAME))
 
@@ -61,8 +63,6 @@ if __name__ == "__main__":
         num_iter = [100, 200, 400]
         learning_rate = ['constant', 'invscaling', 'adaptive']
         activation = ['identity', 'logistic', 'tanh', 'relu']
-
-        execution = []
 
         for l_i in learning_rate_init:
             for n_i in num_iter:
